@@ -12,7 +12,7 @@ export default function Detail() {
      .then((data) => {
        setMascota(data.find(mascota => mascota.id === parseInt(params.mascotaId)));
      });
- }, []);
+ }, [params.mascotaId]);
  return (
    <div>
      <h1>{mascotaPedida.nombre}</h1>
